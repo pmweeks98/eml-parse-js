@@ -50,6 +50,7 @@ export function mimeDecode(str = '', fromCharset = 'UTF-8') {
 			buffer[bufferPos++] = parseInt(hex, 16);
 			i += 2;
 		} else if (chr === '_') {
+			debugger
 			buffer[bufferPos++] = 32; // space character
 		} else {
 			buffer[bufferPos++] = chr.charCodeAt(0);

@@ -54,6 +54,7 @@ function mimeDecode(str, fromCharset) {
             i += 2;
         }
         else if (chr === '_') {
+            debugger;
             buffer[bufferPos++] = 32; // space character
         }
         else {
